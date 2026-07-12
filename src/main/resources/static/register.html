@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Farmer Registration</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+<div id="messageBox">
+    Please login first
+</div>
+
+
+<nav>
+
+    <ul>
+
+        <li><a href="index.html">🏠 Home</a></li>
+
+
+        <li>
+            <a href="#" onclick="checkLogin('dashboard.html'); return false;">
+                📊 Dashboard
+            </a>
+        </li>
+
+
+        <li><a href="register.html">👨‍🌾 Register</a></li>
+
+
+        <li><a href="login.html">🔐 Login</a></li>
+
+
+        <li>
+            <a href="#" onclick="checkLogin('challenges.html'); return false;">
+                🌱 Challenges
+            </a>
+        </li>
+
+
+        <li>
+            <a href="#" onclick="checkLogin('rewards.html'); return false;">
+                🏆 Rewards
+            </a>
+        </li>
+
+
+    </ul>
+
+</nav>
+
+
+<div id="messageBox">
+    Please login first
+</div>
+
+
+
+<div class="card">
+
+
+    <h1>👨‍🌾 Farmer Registration</h1>
+
+
+    <center>
+
+
+        <input
+                type="text"
+                id="name"
+                placeholder="Enter Name"
+        >
+
+        <br><br>
+
+
+        <input
+                type="email"
+                id="email"
+                placeholder="Enter Email"
+        >
+
+        <br><br>
+
+
+        <input
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+        >
+
+        <br><br>
+
+
+        <button type="button" onclick="registerFarmer()">
+            Register
+        </button>
+
+
+    </center>
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

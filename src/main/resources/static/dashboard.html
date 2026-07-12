@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Farmer Dashboard</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body onload="startDashboard()">
+
+
+
+<div id="messageBox">
+  Please login first
+</div>
+
+
+
+<nav>
+
+  <ul>
+
+    <li>
+      <a href="index.html">🏠 Home</a>
+    </li>
+
+    <li>
+      <a href="register.html">👨‍🌾 Register</a>
+    </li>
+
+    <li>
+      <a href="login.html">🔐 Login</a>
+    </li>
+
+
+    <li>
+      <a href="#" onclick="openDashboard(); return false;">
+        📊 Dashboard
+      </a>
+    </li>
+
+
+    <li>
+      <a href="#" onclick="openChallenges(); return false;">
+        🌱 Challenges
+      </a>
+    </li>
+
+
+    <li>
+      <a href="#" onclick="openRewards(); return false;">
+        🏆 Rewards
+      </a>
+    </li>
+
+
+  </ul>
+
+</nav>
+
+
+
+
+
+<div id="dashboardContent" style="display:none;">
+
+
+  <div class="card">
+
+
+    <h1>👨‍🌾 Farmer Dashboard</h1>
+
+
+    <hr>
+
+
+    <h2>👤 Farmer Information</h2>
+
+
+    <p>
+      <b>Name:</b>
+      <span id="farmerName">Farmer</span>
+    </p>
+
+
+    <p>
+      <b>Email:</b>
+      <span id="farmerEmail">Not Available</span>
+    </p>
+
+
+
+    <hr>
+
+
+
+    <h2>📊 Farming Statistics</h2>
+
+
+
+    <div class="stats">
+
+
+      <div class="stat-box">
+        <h3>⭐ Total Points</h3>
+        <p id="points">0</p>
+      </div>
+
+
+      <div class="stat-box">
+        <h3>🌱 Challenges Completed</h3>
+        <p id="challengeCount">0</p>
+      </div>
+
+
+      <div class="stat-box">
+        <h3>🏆 Badge</h3>
+        <p id="badge">🥉 Bronze Farmer</p>
+      </div>
+
+
+      <div class="stat-box">
+        <h3>📈 Progress</h3>
+        <p id="progress">0%</p>
+      </div>
+
+
+    </div>
+
+
+
+    <hr>
+
+
+
+    <h2>🏅 Achievements</h2>
+
+
+    <p>✅ Registered Successfully</p>
+
+    <p>✅ Logged In Successfully</p>
+
+    <p>🌱 Complete challenges to unlock more badges.</p>
+
+
+
+    <hr>
+
+
+
+    <div class="dashboard-buttons">
+
+
+      <button onclick="goPage('challenges.html')">
+        🌱 Take Challenge
+      </button>
+
+
+      <button onclick="goPage('rewards.html')">
+        🏆 View Rewards
+      </button>
+
+
+      <button onclick="logout()">
+        🚪 Logout
+      </button>
+
+
+    </div>
+
+
+
+  </div>
+
+
+</div>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

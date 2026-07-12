@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Challenges</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body onload="startChallenges()">
+
+
+
+<div id="messageBox">
+    Please login first
+</div>
+
+
+<nav>
+
+    <ul>
+
+        <li><a href="index.html">🏠 Home</a></li>
+
+        <li><a href="register.html">👨‍🌾 Register</a></li>
+
+        <li><a href="login.html">🔐 Login</a></li>
+
+        <li><a href="dashboard.html">📊 Dashboard</a></li>
+
+
+        <li>
+            <a href="#" onclick="openChallenges(); return false;">🌱 Challenges</a>
+        </li>
+
+
+        <li>
+            <a href="rewards.html" onclick="return checkLogin(event)">
+                🏆 Rewards
+            </a>
+        </li>
+
+
+    </ul>
+
+</nav>
+
+
+
+<div class="card">
+
+
+    <h1>🌱 Sustainable Farming Challenges</h1>
+
+
+    <center>
+
+
+        <div class="challenge">
+
+            <h2>🌳 Plant 10 Trees</h2>
+
+            <p>Plant 10 saplings to improve the environment.</p>
+
+            <p>⭐ Reward: 100 Points</p>
+
+            <p>🎯 Difficulty: Easy</p>
+
+            <p><b>Status:</b> ⏳ Pending</p>
+
+
+            <button onclick="completeChallenge(100)">
+                Complete Challenge
+            </button>
+
+
+        </div>
+
+
+        <hr>
+
+
+
+        <div class="challenge">
+
+            <h2>💧 Save 100 Litres of Water</h2>
+
+            <p>Use drip irrigation or rainwater efficiently.</p>
+
+            <p>⭐ Reward: 50 Points</p>
+
+            <p>🎯 Difficulty: Easy</p>
+
+
+            <button onclick="completeChallenge(50)">
+                Complete Challenge
+            </button>
+
+
+        </div>
+
+
+        <hr>
+
+
+
+        <div class="challenge">
+
+            <h2>🌿 Use Organic Fertilizer</h2>
+
+            <p>Replace chemical fertilizers with organic manure.</p>
+
+            <p>⭐ Reward: 80 Points</p>
+
+
+            <button onclick="completeChallenge(80)">
+                Complete Challenge
+            </button>
+
+
+        </div>
+
+
+        <hr>
+
+
+
+        <div class="challenge">
+
+            <h2>♻️ Compost Farm Waste</h2>
+
+            <p>Convert farm waste into natural compost.</p>
+
+            <p>⭐ Reward: 70 Points</p>
+
+
+            <button onclick="completeChallenge(70)">
+                Complete Challenge
+            </button>
+
+
+        </div>
+
+
+        <hr>
+
+
+
+        <div class="challenge">
+
+            <h2>🌧️ Install Rainwater Harvesting</h2>
+
+            <p>Collect and store rainwater for irrigation.</p>
+
+            <p>⭐ Reward: 150 Points</p>
+
+
+            <button onclick="completeChallenge(150)">
+                Complete Challenge
+            </button>
+
+
+        </div>
+
+
+
+    </center>
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

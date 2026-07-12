@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Rewards</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body onload="startRewards()">
+
+
+
+<div id="messageBox">
+    Please login first
+</div>
+
+
+
+<nav>
+
+    <ul>
+
+        <li>
+            <a href="index.html">🏠 Home</a>
+        </li>
+
+
+        <li>
+            <a href="register.html">👨‍🌾 Register</a>
+        </li>
+
+
+        <li>
+            <a href="login.html">🔐 Login</a>
+        </li>
+
+
+        <li>
+            <a href="dashboard.html">📊 Dashboard</a>
+        </li>
+
+
+        <li>
+            <a href="#" onclick="openChallenges(); return false;">
+                🌱 Challenges
+            </a>
+        </li>
+
+
+        <li>
+            <a href="#" onclick="openRewards(); return false;">
+                🏆 Rewards
+            </a>
+        </li>
+
+
+    </ul>
+
+</nav>
+
+
+
+
+
+<div class="card">
+
+
+    <h1>🏆 Rewards Center</h1>
+
+
+    <h2>
+        ⭐ Your Points:
+        <span id="rewardPoints">0</span>
+    </h2>
+
+
+
+    <center>
+
+
+
+        <div class="challenge">
+
+            <h2>🥉 Bronze Farmer</h2>
+
+            <p>Required: 100 Points</p>
+
+            <p id="bronze">🔒 Locked</p>
+
+        </div>
+
+
+
+        <hr>
+
+
+
+        <div class="challenge">
+
+            <h2>🥈 Silver Farmer</h2>
+
+            <p>Required: 250 Points</p>
+
+            <p id="silver">🔒 Locked</p>
+
+        </div>
+
+
+
+        <hr>
+
+
+
+        <div class="challenge">
+
+            <h2>🥇 Gold Farmer</h2>
+
+            <p>Required: 500 Points</p>
+
+            <p id="gold">🔒 Locked</p>
+
+        </div>
+
+
+
+        <hr>
+
+
+
+        <div class="challenge">
+
+            <h2>🌟 Eco Champion</h2>
+
+            <p>Required: 1000 Points</p>
+
+            <p id="eco">🔒 Locked</p>
+
+        </div>
+
+
+
+        <br>
+
+
+
+        <button onclick="goPage('dashboard.html')">
+
+            Go to Dashboard
+
+        </button>
+
+
+
+    </center>
+
+
+</div>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

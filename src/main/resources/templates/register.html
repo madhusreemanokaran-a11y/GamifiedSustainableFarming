@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Farmer Registration</title>
+</head>
+<body>
+
+<h1>Farmer Registration</h1>
+
+<form action="/saveFarmer" method="post">
+    <label>Name:</label><br>
+    <input type="text" name="name"><br><br>
+
+    <label>Village:</label><br>
+    <input type="text" name="village"><br><br>
+
+    <label>Crop:</label><br>
+    <input type="text" name="crop"><br><br>
+
+    <button type="submit">Register</button>
+</form>
+
+</body>
+</html>
