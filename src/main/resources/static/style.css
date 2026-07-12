@@ -239,3 +239,43 @@ progress{
     border-radius: 10px;
     z-index: 9999;
 }
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .container,
+    .card,
+    .dashboard,
+    .form-box {
+        width: 90%;
+        margin: auto;
+    }
+
+    input,
+    button {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}
