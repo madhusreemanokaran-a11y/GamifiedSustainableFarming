@@ -243,39 +243,54 @@ progress{
 @media (max-width: 600px) {
 
     body {
+        width: 100%;
         overflow-x: hidden;
     }
 
+    nav {
+        padding: 10px;
+    }
+
     nav ul {
-        flex-direction: column;
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 5px;
     }
 
     .container,
-    .card,
     .dashboard,
     .form-box {
-        width: 90%;
+        width: 95%;
         margin: auto;
     }
 
-    input,
-    button {
-        width: 100%;
+    .cards,
+    .dashboard-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .card {
+        padding: 10px;
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 28px;
     }
 
-    .cards {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+    button {
+        width: auto;
+        padding: 10px 20px;
+    }
+
+    input {
+        width: 90%;
     }
 
 }
